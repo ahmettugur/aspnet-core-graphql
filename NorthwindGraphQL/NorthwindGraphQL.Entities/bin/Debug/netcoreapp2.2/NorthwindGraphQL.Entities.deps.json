@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "NorthwindGraphQL.Entities/1.0.0": {
+        "dependencies": {
+          "NorthwindGraphQL.Core.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "NorthwindGraphQL.Entities.dll": {}
+        }
+      },
+      "NorthwindGraphQL.Core.Contracts/1.0.0": {
+        "runtime": {
+          "NorthwindGraphQL.Core.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NorthwindGraphQL.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NorthwindGraphQL.Core.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

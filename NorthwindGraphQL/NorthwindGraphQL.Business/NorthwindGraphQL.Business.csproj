@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NorthwindGraphQL.Business.Contracts\NorthwindGraphQL.Business.Contracts.csproj" />
+    <ProjectReference Include="..\NorthwindGraphQL.Data.Contracts\NorthwindGraphQL.Data.Contracts.csproj" />
+    <ProjectReference Include="..\NorthwindGraphQL.Entities\NorthwindGraphQL.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

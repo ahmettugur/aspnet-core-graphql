@@ -1,0 +1,9 @@
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\bin\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.deps.json
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\bin\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.dll
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\bin\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.pdb
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\obj\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.csprojAssemblyReference.cache
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\obj\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.csproj.CoreCompileInputs.cache
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\obj\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.AssemblyInfoInputs.cache
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\obj\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.AssemblyInfo.cs
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\obj\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.dll
+D:\Projects\NorthwindGraphQL\NorthwindGraphQL.Core.Contracts\obj\Debug\netcoreapp2.2\NorthwindGraphQL.Core.Contracts.pdb

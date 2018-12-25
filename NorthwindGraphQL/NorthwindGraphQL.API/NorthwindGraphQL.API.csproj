@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NorthwindGraphQL.Business.Contracts\NorthwindGraphQL.Business.Contracts.csproj" />
+    <ProjectReference Include="..\NorthwindGraphQL.Business\NorthwindGraphQL.Business.csproj" />
+    <ProjectReference Include="..\NorthwindGraphQL.Data\NorthwindGraphQL.Data.csproj" />
+    <ProjectReference Include="..\NorthwindGraphQL.Types\NorthwindGraphQL.Types.csproj" />
+  </ItemGroup>
+
+</Project>
