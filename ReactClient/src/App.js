@@ -13,7 +13,7 @@ class App extends Component {
       <div className="container">
       <NavBar />
           <Route path="/" exact component={MainPage} />
-          <Route path="/products" exact component={ProductList} />
+          <Route path="/products/:categoryId?/:page?" exact component={ProductList} />
           <Route path="/orders" exact component={OrderList} />
       </div>
     );
