@@ -11,7 +11,7 @@ namespace NorthwindGraphQL.Data
     public class NorthwindDbContext : DbContext
     {
         public IConfigurationRoot Configuration { get; set; }
-        public virtual DbSet<OrderDetailView>  OrderDetailView { get; set; }
+        //public virtual DbSet<OrderDetailView> OrderDetailView { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //var builder = new ConfigurationBuilder()
@@ -33,8 +33,8 @@ namespace NorthwindGraphQL.Data
             modelBuilder.Entity<Category>().ToTable("Categories", schema: "dbo");
             modelBuilder.Entity<Supplier>().ToTable("Suppliers", schema: "dbo");
             modelBuilder.Entity<Order>().ToTable("Orders", schema: "dbo");
+            modelBuilder.Entity<Customer>().ToTable("Customers", schema: "dbo");
             modelBuilder.Entity<OrderDetailView>(entity => { entity.HasKey(e => e.OrderID); });
-            //modelBuilder.Query<OrderDetailView>().ToView("OrderDetailView", schema: "dbo");
             base.OnModelCreating(modelBuilder);
         }
     }

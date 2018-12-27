@@ -708,11 +708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj",
+      "projectUniqueName": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj",
       "projectName": "NorthwindGraphQL.Core",
-      "projectPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj",
+      "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj",
       "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core\\obj\\",
+      "outputPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -731,8 +731,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj": {
-              "projectPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj"
+            "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj": {
+              "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj"
             }
           }
         }

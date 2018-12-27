@@ -9,7 +9,7 @@ namespace NorthwindGraphQL.Types.ObjectTypes
 {
     public class ProductType : ObjectGraphType<Product>
     {
-        public ProductType(ICategoryService categoryService, ISupplierService supplierService)
+        public ProductType(ICategoryService categoryService, ISupplierService supplierService, IOrderDetailViewService orderDetailViewService)
         {
             Name = "Urun";
             Description = "Ürün kolonları";
@@ -20,7 +20,7 @@ namespace NorthwindGraphQL.Types.ObjectTypes
             Field(_ => _.CategoryID, nullable: true).Description("Kategori No");
             Field(_ => _.QuantityPerUnit).Description("Birim miktarı");
             Field(_ => _.UnitPrice, nullable: true).Description("Birim Fiyatı");
-            Field(_ => _.UnitsInStock, nullable: true,type:typeof(IntGraphType)).Description("Stok miktarı");
+            Field(_ => _.UnitsInStock, nullable: true, type: typeof(IntGraphType)).Description("Stok miktarı");
             Field(_ => _.UnitsOnOrder, nullable: true, type: typeof(IntGraphType)).Description("Siparişteki miktarı");
             Field(_ => _.ReorderLevel, nullable: true, type: typeof(IntGraphType)).Description("Yeniden sipariş seviyesi");
             Field(_ => _.Discontinued, nullable: true).Description("Stoğu var mı?");
@@ -41,6 +41,15 @@ namespace NorthwindGraphQL.Types.ObjectTypes
                     return supplier;
                 }
             );
+            Field<ListGraphType<OrderDetailViewType>>(
+                "orders",
+                Description = "Ürüne Ait Siparişler",
+                resolve: context =>
+                {
+                    return orderDetailViewService.GetAll(_ => _.ProductID == context.Source.ProductID);
+                }
+            );
+
         }
     }
 }

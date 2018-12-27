@@ -13,15 +13,15 @@ namespace NorthwindGraphQL.API.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
-        private readonly IProductService _productService;
-        public ValuesController(IProductService productService)
+        private readonly ICustomerService _customerService;
+        public ValuesController(ICustomerService customerService)
         {
-            _productService = productService;
+            _customerService = customerService;
         }
         [HttpGet]
         public IActionResult Get()
         {
-            var product = _productService.GetAll();
+            var product = _customerService.GetAll();
             return Ok(product);
         }
 
@@ -34,8 +34,11 @@ namespace NorthwindGraphQL.API.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post()
         {
+
+            var product = _customerService.GetAll();
+            return Ok(product);
         }
 
         // PUT api/values/5

@@ -4106,11 +4106,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Types\\NorthwindGraphQL.Types.csproj",
+      "projectUniqueName": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Types\\NorthwindGraphQL.Types.csproj",
       "projectName": "NorthwindGraphQL.Types",
-      "projectPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Types\\NorthwindGraphQL.Types.csproj",
+      "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Types\\NorthwindGraphQL.Types.csproj",
       "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Types\\obj\\",
+      "outputPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Types\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4129,11 +4129,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Business.Contracts\\NorthwindGraphQL.Business.Contracts.csproj": {
-              "projectPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Business.Contracts\\NorthwindGraphQL.Business.Contracts.csproj"
+            "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Business.Contracts\\NorthwindGraphQL.Business.Contracts.csproj": {
+              "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Business.Contracts\\NorthwindGraphQL.Business.Contracts.csproj"
             },
-            "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj": {
-              "projectPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj"
+            "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj": {
+              "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj"
             }
           }
         }

@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj",
+      "projectUniqueName": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj",
       "projectName": "NorthwindGraphQL.Core.Contracts",
-      "projectPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj",
+      "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj",
       "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\obj\\",
+      "outputPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -9,7 +9,11 @@ namespace NorthwindGraphQL.API.Schemas
 {
     public class NorthwindAppQuery : ObjectGraphType<object>
     {
-        public NorthwindAppQuery(IProductService productService, ICategoryService categoryService, ISupplierService supplierService, IOrderService orderService)
+        public NorthwindAppQuery(IProductService productService,
+            ICategoryService categoryService,
+            ISupplierService supplierService,
+            IOrderService orderService,
+            ICustomerService customerService)
         {
             #region Product
             Field<ListGraphType<ProductType>>(
@@ -100,6 +104,30 @@ namespace NorthwindGraphQL.API.Schemas
                 {
                     var orderId = context.GetArgument<int>("orderId");
                     return orderService.Get(_ => _.OrderID == orderId);
+                }
+            );
+            #endregion
+
+            #region Müşteri
+            Field<ListGraphType<CustomerType>>(
+                "allCustomers",
+                Description = "Musteriler",
+                resolve: context =>
+                {
+                    return customerService.GetAll();
+                }
+            );
+
+            Field<CustomerType>(
+                "customer",
+                Description = "Musteri Detay",
+                arguments: new QueryArguments(
+                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "customerId" }
+                ),
+                resolve: context =>
+                {
+                    var customerId = context.GetArgument<string>("customerId");
+                    return customerService.Get(_ => _.CustomerID == customerId);
                 }
             );
             #endregion

@@ -7,7 +7,7 @@ namespace NorthwindGraphQL.Entities
     public class Order : IEntity
     {
         public int OrderID { get; set; }
-        public char CustomerID { get; set; }
+        public string CustomerID { get; set; }
         public int? EmployeeID { get; set; }
         public DateTime? OrderDate { get; set; }
         public DateTime? RequiredDate { get; set; }
@@ -20,8 +20,8 @@ namespace NorthwindGraphQL.Entities
         public string ShipRegion { get; set; }
         public string ShipPostalCode { get; set; }
         public string ShipCountry { get; set; }
-        public List<Customer> Customers { get; set; }
-        public List<Employee> Employees { get; set; }
+        ////public List<Customer> Customers { get; set; }
+        //public List<Employee> Employees { get; set; }
     }
 
 

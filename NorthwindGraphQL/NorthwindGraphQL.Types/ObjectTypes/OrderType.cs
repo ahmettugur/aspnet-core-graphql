@@ -9,13 +9,13 @@ namespace NorthwindGraphQL.Types.ObjectTypes
 {
     public class OrderType : ObjectGraphType<Order>
     {
-        public OrderType(IProductService productService, IOrderDetailViewService orderDetailViewService)
+        public OrderType(ICustomerService customerService, IOrderDetailViewService orderDetailViewService)
         {
             Name = "Siparisler";
             Description = "Musteri siparisleri";
 
             Field(_ => _.OrderID).Description("Siparis No");
-            Field(_ => _.CustomerID,type:typeof(StringGraphType)).Description("Musteri No");
+            Field(_ => _.CustomerID).Description("Musteri No");
             Field(_ => _.EmployeeID, nullable: true).Description("Personel No");
             Field(_ => _.OrderDate,nullable:true).Description("Siparis Tarihi");
             Field(_ => _.RequiredDate, nullable: true).Description("Istenen Tarih");
@@ -37,6 +37,15 @@ namespace NorthwindGraphQL.Types.ObjectTypes
                     return orderDetailViewService.GetAll(_ => _.OrderID == context.Source.OrderID);
                 }
             );
+            Field<CustomerType>(
+                "customer",
+                Description="Siparis veren müsteri",
+                resolve:context =>
+                {
+                    return customerService.Get(_=>_.CustomerID == context.Source.CustomerID);
+                }
+            );
+
         }
     }
 }

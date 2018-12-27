@@ -1,6 +1,8 @@
-﻿namespace NorthwindGraphQL.Entities
+﻿using NorthwindGraphQL.Core.Contracts.Entities;
+
+namespace NorthwindGraphQL.Entities
 {
-    public class Customer
+    public class Customer:IEntity
     {
         public string CustomerID { get; set; }
         public string CompanyName { get; set; }

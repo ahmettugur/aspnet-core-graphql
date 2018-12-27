@@ -36,10 +36,8 @@ namespace NorthwindGraphQL.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
+            
             //Context
-
             services.AddScoped<DbContext, NorthwindDbContext>();
 
             //Business
@@ -48,7 +46,8 @@ namespace NorthwindGraphQL.API
             services.AddScoped<ISupplierService, SupplierService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IOrderDetailViewService, OrderDetailViewService>();
-            
+            services.AddScoped<ICustomerService, CustomerService>();
+
 
             //Data Respository
             services.AddScoped<IProductRepository, EFProductRepository>();
@@ -56,6 +55,7 @@ namespace NorthwindGraphQL.API
             services.AddScoped<ISupplierRepository, EFSupplierRepository>();
             services.AddScoped<IOrderRepository,EFOrderRepository>();
             services.AddScoped<IOrderDetailViewRepository, EFOrderDetailViewRepository>();
+            services.AddScoped<ICustomerRepository, EFCustomerRepository>();
 
             //GraphQL Document
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
@@ -71,9 +71,12 @@ namespace NorthwindGraphQL.API
             services.AddSingleton<SupplierType>();
             services.AddSingleton<OrderType>();
             services.AddSingleton<OrderDetailViewType>();
+            services.AddSingleton<CustomerType>();
 
             var sp = services.BuildServiceProvider();
             services.AddSingleton<ISchema>(new NorthwindAppSchema(new FuncDependencyResolver(type => sp.GetService(type))));
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
         }
 
@@ -89,7 +92,7 @@ namespace NorthwindGraphQL.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseCors(_ => _.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -9,7 +9,7 @@ using System.Text;
 
 namespace NorthwindGraphQL.Core.Repository.EntityFramework
 {
-    public abstract class EFGenericRepository<TEntity, TContext> : IGenericWriteRepository<TEntity>,IGenericReadRepository<TEntity>
+    public abstract class EFGenericRepository<TEntity, TContext> : IGenericWriteRepository<TEntity>, IGenericReadRepository<TEntity>
             where TEntity : class, IEntity, new()
             where TContext : DbContext, new()
     {
@@ -41,7 +41,7 @@ namespace NorthwindGraphQL.Core.Repository.EntityFramework
         {
             using (var context = new TContext())
             {
-                return context.Set<TEntity>().SingleOrDefault(predicate);
+                return context.Set<TEntity>().FirstOrDefault(predicate);
             }
         }
 

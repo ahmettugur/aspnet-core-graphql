@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="~/js/axios.min.js"></script>
+<script>
+    setTimeout(function () {
+
+        const query = `
+    query {
+      allProduct{
+        productID
+        productName
+        orders {
+          orderID
+          productID
+          productName
+          quantity
+          unitPrice
+          discount
+          extendedPrice
+        }
+      }
+    }
+    `;
+        var config = {
+            headers: {
+                'Content-Type': 'application/json',
+                "Access-Control-Allow-Origin": "*",
+                'Accept': '*',
+            }
+        };
+
+        axios.post("http://localhost:3909/graphql", {
+            query
+        }).then((result) => {
+            console.log(result)
+        }).catch((error) => {
+            console.log(error.response)
+            console.log(error.request)
+        });
+
+    }, 300)
+
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
