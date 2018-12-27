@@ -1,8 +1,11 @@
 ﻿using GraphQL.Types;
 using NorthwindGraphQL.Business.Contracts;
+using NorthwindGraphQL.Entities;
+using NorthwindGraphQL.Types.Models;
 using NorthwindGraphQL.Types.ObjectTypes;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace NorthwindGraphQL.API.Schemas
@@ -16,13 +19,38 @@ namespace NorthwindGraphQL.API.Schemas
             ICustomerService customerService)
         {
             #region Product
-            Field<ListGraphType<ProductType>>(
+            //Field<ListGraphType<ProductType>>(
+            //    "allProduct",
+            //    Description = "Tum Urunler",
+            //    resolve: context =>
+            //     {
+            //         return productService.GetAll();
+            //     }
+            //);
+            Field<ProductResponseType>(
                 "allProduct",
                 Description = "Tum Urunler",
+                arguments: new QueryArguments(
+                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "categoryId" },
+                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "page" }
+                ),
                 resolve: context =>
-                 {
-                     return productService.GetAll();
-                 }
+                {
+                    var categoryId = context.GetArgument<int>("categoryId");
+                    var page = context.GetArgument<int>("page");
+                    int pageSize = 12;
+                    var products = (categoryId == 0 ? productService.GetAll() : productService.GetAll(_ => _.CategoryID == categoryId)).OrderByDescending(_ => _.ProductID).ToList();
+
+                    ProductResponse productResponse = new ProductResponse
+                    {
+                        Products = products.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
+                        PageCount = products.Count,
+                        PageSize = pageSize,
+                        CurrentCategory = categoryId,
+                        CurrentPage = page
+                    };
+                    return productResponse;
+                }
             );
             Field<ProductType>(
                 "product",
@@ -36,6 +64,7 @@ namespace NorthwindGraphQL.API.Schemas
                      return productService.Get(_ => _.ProductID == productId);
                  }
             );
+
             #endregion
 
             #region Category

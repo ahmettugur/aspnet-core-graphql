@@ -72,6 +72,7 @@ namespace NorthwindGraphQL.API
             services.AddSingleton<OrderType>();
             services.AddSingleton<OrderDetailViewType>();
             services.AddSingleton<CustomerType>();
+            services.AddSingleton<ProductResponseType>();
 
             var sp = services.BuildServiceProvider();
             services.AddSingleton<ISchema>(new NorthwindAppSchema(new FuncDependencyResolver(type => sp.GetService(type))));
