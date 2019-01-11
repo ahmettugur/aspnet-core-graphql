@@ -1160,7 +1160,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.FileExtensions/2.2.0": {
-      "sha512": "1cO9Ca+lLh7mRTbJYEXnGPqoVMt/71BM7zmcZx6VOFLEBAfpOej/isDtgqRYhDcMkLaS9vn9pXerp41fTO9y1w==",
+      "sha512": "BnkmTopJ7m+p0/EBshdJmoWroUvMlu+oA+bDvzEWh3WA9rOYdnTZueQ7Ap1oSfUnHnPBnuWae/ED8hHlM/sQxA==",
       "type": "package",
       "path": "microsoft.extensions.configuration.fileextensions/2.2.0",
       "files": [
@@ -1173,7 +1173,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Json/2.2.0": {
-      "sha512": "vqJEFHHDVTDhjTTdX8QZWF75Hw9bFLbmRcjRbXtmQLrFBvcTzuS9w1jJGWjrgR1UQ7YpuJdhcDXzhxorqkR1Ig==",
+      "sha512": "CqqFzpFuW9rOWOHI9c3JrGrOOogfLRrGTWVU2AIFkxXRQ/bAg5lL3WabkVEywmTRo58AI3p6sT0ACNy9s279VA==",
       "type": "package",
       "path": "microsoft.extensions.configuration.json/2.2.0",
       "files": [
@@ -1294,7 +1294,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/2.2.0": {
-      "sha512": "Sv8EDHvN2852bE5G1yosKCa7sUw/x0Z/rCaI5LIWHseAXprG1h9oberAh3NRBO7w2zTZq79WPeQDMsPBVSf99w==",
+      "sha512": "vpH+o7f8obVx65PiEtBXxTwL5RosK60fNIMy/y8WGE4/r4IvAqQGukOzMhxsp//Accvd7kmukyQTVkqVYdaDyA==",
       "type": "package",
       "path": "microsoft.extensions.primitives/2.2.0",
       "files": [
@@ -1572,7 +1572,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.2.0": {
-      "sha512": "qIrVLupwT2NYTrf7KM7Nh+mJr36V5MITVRjyGOByVVCwGmQgQmI/6bjZYQv+QdExi4Cm87eCKJX9FdT6nc00Xg==",
+      "sha512": "OK/H8p9Ig6mLMITjXJ4VOewrJg/TU+dAPHE4BdMWMv+8COzBehf7XF1+DofKkmqdHpO2cJoS5Sc9PEZ6PKCbsg==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.2.0",
       "files": [
@@ -1647,7 +1647,7 @@
       ]
     },
     "Microsoft.Win32.Registry/4.5.0": {
-      "sha512": "vduxuHEqRgRrTE8wYG8Wxj/+6wwzddOmZzjKZx6rFMc/91aUBxI5etAFYxesoNaIja5NpgSTcnk6cN8BeYXf9A==",
+      "sha512": "nt8HW2YtCF3xGObHXtCAn5tzuZpjy5YMPftzyrjF6Ek5RyLUFU4cSw4yGWV2+dyftDXjDpytdLPrgSttC9ZePA==",
       "type": "package",
       "path": "microsoft.win32.registry/4.5.0",
       "files": [
@@ -2105,7 +2105,7 @@
       ]
     },
     "System.Data.SqlClient/4.6.0": {
-      "sha512": "cppLAiY36su7Hr9dOaeDXRkndLKtnh7HgQgOfAgV0oN764BQXShll7yBZ8OwPtdYUSuwTT0re7eDQPGhwnojVQ==",
+      "sha512": "DLhg881ETdy/OmlbBCjfXGVU2Xlm9x5yHwhcl33SAfCIG05hAbgMcvHUZruIG1sBJolGzDhes7R7hAKPS1SOqw==",
       "type": "package",
       "path": "system.data.sqlclient/4.6.0",
       "files": [
@@ -3337,7 +3337,7 @@
       ]
     },
     "System.Security.AccessControl/4.5.0": {
-      "sha512": "6RQtcT+TyDgLUFsAnmmdfRRGdLYKxSZGkSPOd052tvYFxOTMaQb6ANlwhGqZtNO52PosaCoXu7uatFneujAxmA==",
+      "sha512": "aVjTe36YkO8FzfNhMLoPEzv3gF9rphoW9ngFhG/MH4zzEPLx07sNrgCLwMP4Wx2leI6qarMrGv21OwQXYUKLmw==",
       "type": "package",
       "path": "system.security.accesscontrol/4.5.0",
       "files": [
@@ -3379,7 +3379,7 @@
       ]
     },
     "System.Security.Principal.Windows/4.5.0": {
-      "sha512": "WA9ETb/pY3BjnxKjBUHEgO59B7d/nnmjHFsqjJ2eDT780nD769CT1/bw2ia0Z6W7NqlcqokE6sKGKa6uw88XGA==",
+      "sha512": "aEFuhlWINOa6KnKeFqQNzmtOeyCCyIJY4CS5DI9keDNXgVzqVsK46axp8Rpkx46S+QlNTqGgdx/O/mzrC1GA5A==",
       "type": "package",
       "path": "system.security.principal.windows/4.5.0",
       "files": [
@@ -3715,11 +3715,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Data\\NorthwindGraphQL.Data.csproj",
+      "projectUniqueName": "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Data\\NorthwindGraphQL.Data.csproj",
       "projectName": "NorthwindGraphQL.Data",
-      "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Data\\NorthwindGraphQL.Data.csproj",
+      "projectPath": "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Data\\NorthwindGraphQL.Data.csproj",
       "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
-      "outputPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Data\\obj\\",
+      "outputPath": "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3738,17 +3738,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj": {
-              "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj"
+            "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj": {
+              "projectPath": "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Core.Contracts\\NorthwindGraphQL.Core.Contracts.csproj"
             },
-            "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj": {
-              "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj"
+            "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj": {
+              "projectPath": "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Core\\NorthwindGraphQL.Core.csproj"
             },
-            "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Data.Contracts\\NorthwindGraphQL.Data.Contracts.csproj": {
-              "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Data.Contracts\\NorthwindGraphQL.Data.Contracts.csproj"
+            "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Data.Contracts\\NorthwindGraphQL.Data.Contracts.csproj": {
+              "projectPath": "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Data.Contracts\\NorthwindGraphQL.Data.Contracts.csproj"
             },
-            "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj": {
-              "projectPath": "D:\\GithubProjectsTest\\AspNetCoreGraphQL\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj"
+            "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj": {
+              "projectPath": "D:\\GithubProjects\\aspnet-core-graphql\\NorthwindGraphQL\\NorthwindGraphQL.Entities\\NorthwindGraphQL.Entities.csproj"
             }
           }
         }
