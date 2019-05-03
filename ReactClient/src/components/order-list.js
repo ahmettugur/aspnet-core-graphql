@@ -23,21 +23,27 @@ export default class OrderList extends Component {
         }
       }      
     `;
+    axios.post("http://localhost:3909/graphql", {
+      query
+    }).then(response => {
+      this.setState({
+        orders: response.data.data.allOrders
+      });
+    });
     // We call the method here to execute our async function
-    this.getOrders(query);
+    //this.getOrders(query);
   }
 
   getOrders = async query => {
     try {
-      const response = await axios.post("http://localhost:3909/graphql", {
+      await axios.post("http://localhost:3909/graphql", {
         query
-      });
-
-      this.setState({
-        orders: response.data.data.allOrders
+      }).then(response => {
+        this.setState({
+          orders: response.data.data.allOrders
+        });
       });
     } catch (error) {
-      // If there's an error, set the error to the state
       console.log(error);
     }
   };

@@ -47,16 +47,27 @@ export default class ProductList extends React.Component {
     try {
       const response = await axios.post("http://localhost:3909/graphql", {
         query
-      });
-      console.log(response.data.data.allProduct);
+      }).then( response => {
+        console.log("response.data.data.allProduct");
+        this.setState({
+          products: response.data.data.allProduct.products,
+          currentCategory: response.data.data.allProduct.currentCategory,
+          currentPage: response.data.data.allProduct.currentPage,
+          pageCount: response.data.data.allProduct.pageCount,
+          pageSize: response.data.data.allProduct.pageSize
+        });
+        //console.log(response.data.data.allProduct);
+        //console.log(response)
+    });
+      // console.log(response.data.data.allProduct);
 
-      this.setState({
-        products: response.data.data.allProduct.products,
-        currentCategory: response.data.data.allProduct.currentCategory,
-        currentPage: response.data.data.allProduct.currentPage,
-        pageCount: response.data.data.allProduct.pageCount,
-        pageSize: response.data.data.allProduct.pageSize
-      });
+      // this.setState({
+      //   products: response.data.data.allProduct.products,
+      //   currentCategory: response.data.data.allProduct.currentCategory,
+      //   currentPage: response.data.data.allProduct.currentPage,
+      //   pageCount: response.data.data.allProduct.pageCount,
+      //   pageSize: response.data.data.allProduct.pageSize
+      // });
     } catch (error) {
       // If there's an error, set the error to the state
       console.log(error);
@@ -67,7 +78,7 @@ export default class ProductList extends React.Component {
     this.fetcproduct();
   }
   renderProducts() {
-    alert(123)
+
     if (this.state.products.length === 0) {
       return (
         <tr>
